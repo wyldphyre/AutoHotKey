@@ -9,7 +9,7 @@ return
 SendInput, ^{F4}
 return
 
-; Windows+P: make a property, base on an F* private field
+; WinKey+P: make a property, based on an F* private field
 #p::
 SendInput {HOME}
 SendInput ^{RIGHT}
@@ -24,7 +24,7 @@ SendInput {Left}
 SendInput {SPACE}Read{SPACE}^v{SPACE}Write{SPACE}^v
 return
 
-; Start+Shift+P: make a read only property, base on an F* private field, using the Windows + Shift + P key combo
+; WinKey+Shift+P: make a read only property, based on an F* private field, using the Windows + Shift + P key combo
 #+p::
 SendInput {HOME}
 SendInput ^{RIGHT}
@@ -55,7 +55,7 @@ SendInput {Left}
 SendInput {SPACE}Read{SPACE}Get^v{SPACE}Write{SPACE}Set^v
 return
 
-; Start+C: Instantiate and object based on a variable declaration
+; WinKey+C: Instantiate and object based on a variable declaration
 #c::
 SendInput {HOME}^{RIGHT 2}{LEFT}=^{RIGHT 2}{LEFT}.Create
 SendInput ^{LEFT 3}+^{RIGHT}+{LEFT 4}
@@ -84,7 +84,7 @@ return
 ; Delphi text replacement shortcuts
 ;===================================
 
-;Creates an assert stubs
+;Create assertion stubs for getters and setters
 :o:asserti::Assert(Invariants('', , , ''));{left 12}
 :o:assertc::Assert(Condition(, '', ''));{left 11}
 
