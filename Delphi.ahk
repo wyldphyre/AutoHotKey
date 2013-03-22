@@ -1,0 +1,113 @@
+#IfWinActive ahk_class TEditWindow
+; provide an equivalent to Ctrl-a (select all) within the Delphi IDE
+~^a::
+SendInput, ^{HOME}^+{END}
+return
+
+; provide an equivalent to Ctrl-w to close a file in the Delphi IDE
+~^w::
+SendInput, ^{F4}
+return
+
+; Windows+P: make a property, base on an F* private field
+#p::
+SendInput {HOME}
+SendInput ^{RIGHT}
+SendInput ^+{RIGHT}
+SendInput +{LEFT 3}
+SendInput ^c
+SendInput ^{LEFT}
+SendInput {DEL}
+SendInput Property{SPACE}
+SendInput {END}
+SendInput {Left}
+SendInput {SPACE}Read{SPACE}^v{SPACE}Write{SPACE}^v
+return
+
+; Start+Shift+P: make a read only property, base on an F* private field, using the Windows + Shift + P key combo
+#+p::
+SendInput {HOME}
+SendInput ^{RIGHT}
+SendInput ^+{RIGHT}
+SendInput +{LEFT 3}
+SendInput ^c
+SendInput ^{LEFT}
+SendInput {DEL}
+SendInput Property{SPACE}
+SendInput {END}
+SendInput {Left}
+SendInput {SPACE}Read{SPACE}^v
+return
+
+; Ctrl+Start+P: make a property with Get and Set methods, based on an F* private field
+^#p::
+SendInput {HOME}
+SendInput ^{RIGHT}
+SendInput {RIGHT}
+SendInput ^+{RIGHT}
+SendInput +{LEFT 3}
+SendInput ^c
+SendInput ^{LEFT}
+SendInput {DEL}
+SendInput Property{SPACE}
+SendInput {END}
+SendInput {Left}
+SendInput {SPACE}Read{SPACE}Get^v{SPACE}Write{SPACE}Set^v
+return
+
+; Start+C: Instantiate and object based on a variable declaration
+#c::
+SendInput {HOME}^{RIGHT 2}{LEFT}=^{RIGHT 2}{LEFT}.Create
+SendInput ^{LEFT 3}+^{RIGHT}+{LEFT 4}
+SendInput ^c
+SendInput {END}{Return}
+SendInput ^v.Free;
+SendInput {UP}{END}{LEFT}
+SendInput ^{LEFT 3}+^{RIGHT}+{LEFT 4}
+Return
+
+; Ctrl+Alt+D: duplicate the current line
+^!d::
+SendInput {HOME}+{DOWN}^c{HOME}^v{UP}
+return
+
+; map Ctrl+Delete to Ctrl+t
+^Del::
+SendInput ^t
+return
+
+; insert test code warning hotstring
+;#IfWinActive, ahk_class TEditWindow
+::testcodewarning::// WARNING: The following line of code is for testing purposes, and should not exist in booked in code.
+
+
+; Delphi text replacement shortcuts
+;===================================
+
+;Creates an assert stubs
+:o:asserti::Assert(Invariants('', , , ''));{left 12}
+:o:assertc::Assert(Condition(, '', ''));{left 11}
+
+; Automatic case correction of Delphi Keywords
+;==============================================
+;:C:procedure::Procedure
+;:C:function::Function
+:C:constructor::Constructor
+:C:destructor::Destructor
+:C:property::Property
+:C:override::Override
+:C:overload::Overload
+;:c:aplan::ApplicationPlan
+;:C:begin::Begin
+;:C:end::End
+;:C:if::If
+;:C:then::Then
+;:C:else::Else
+;:C:and::And
+;:C:interface::Interface
+;:C:var::Var
+;:C:in::In
+;:C:or::Or
+;:C:for::For
+;:C:to::To
+;:C:do::Do
