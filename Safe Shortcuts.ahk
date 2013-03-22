@@ -1,5 +1,11 @@
 SetTitleMatchMode 2 ; title can contain the search text
 
+; This scripts provides shortcuts that can be used within various applications to open the current file within Obelisk Safe
+; Supported Applications:
+;  - Windows Explorer
+;  - Notepad++
+;  - Visual Studio // relies on VS having a shortcut that will put the current files path on the clipboard
+
 ; Handle shortcut in Windows Explorer
 #IfWinActive ahk_class CabinetWClass
 ; Ctrl+Alt+Shift+S: open the current file in Safe
@@ -39,7 +45,7 @@ return
 ^!+s::
 if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
 {
-  SendInput ^!k
+  SendInput ^!k ; VS shortcut that puts the current files path on the clipboard
   Sleep, 250
   WinActivate
   Send ^v
