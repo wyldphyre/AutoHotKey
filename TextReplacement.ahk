@@ -71,9 +71,9 @@ return
 :o:$endif::{{}$IFDEF{}}
 
 ; Create Kestral Patch Block. For use when making changes in 3rd party code
-:://kp::
-SendInput // -------------------- Start Kestral Patch -------------------- {ENTER}
-SendInput // [] : <reason>{ENTER}
-SendInput // --------------------- End Kestral Patch ---------------------
-SendInput {UP}{HOME}^{RIGHT}{RIGHT}
-return
+;:://kp::
+;SendInput // -------------------- Start Kestral Patch -------------------- {ENTER}
+;SendInput // [] : <reason>{ENTER}
+;SendInput // --------------------- End Kestral Patch ---------------------
+;SendInput {UP}{HOME}^{RIGHT}{RIGHT}
+;return
