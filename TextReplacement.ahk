@@ -50,6 +50,7 @@
 :cr*:{gs}::{ get; set; }
 :cr*:{gps}::{ get; private set; }
 :cr*:{gs}::{ get; set; }
+:cr*:ftm::ForgeTemplateMap
 
 :c:endif::
 sendRaw {$ENDIF}
