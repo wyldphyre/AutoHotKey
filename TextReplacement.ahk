@@ -66,6 +66,12 @@ return
 ;::ap::ApplicationPlan
 
 
+; Temporary shortcut for code refactoring
+::/dc::
+SendInput var Field = PropertySheet.AddComboBoxField(TermDefinition, ^v);{ENTER}
+SendInput Field.Constrain(Record => {!}Record.Deleted);{ENTER}
+SendInput return Field;
+
 ;Create an empty Delphi 5 IFDEF declaration
 :o:ifdefd5::{{}$IFDEF VER130{}}{RETURN}{{}$ELSE{}}{ENTER}{{}$ENDIF{}}{UP}{HOME}{ENTER}{UP}
 
