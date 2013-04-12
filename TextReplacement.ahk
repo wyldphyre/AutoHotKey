@@ -80,7 +80,7 @@ SendInput {ENTER}
 SendInput return Template.AddCustomColumn<^v>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
 SendInput {RAW}  }
 SendInput {ENTER}
-SendInput public static Exp.Data.GridColumnControl<^v> Add_NAME_HERE_Column<TContext>(this Exp.Data.GridTemplateControl<TContext> Template, Forge.Term.DefinitionContract TermDefinition, Func<TContext, IEnumerable<^v>> Projector)
+SendInput public static Exp.Data.GridColumnControl<^v> Add_NAME_HERE_Column<TContext>(this Exp.Data.GridTemplateControl<TContext> Template, Forge.Term.DefinitionContract TermDefinition, Func<TContext, IEnumerable<^v>> Projector){ENTER}
 SendInput {RAW}  {
 SendInput {ENTER}
 SendInput return Template.AddCustomColumn<^v>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
