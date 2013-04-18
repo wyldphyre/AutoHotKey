@@ -32,8 +32,10 @@ SendInput {RAW}  {
 SendInput {ENTER}
 SendInput return Template.AddCustomColumn<^v>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
 SendInput {RAW}  }
+return
 
 ; Creat an empty anonymous delegate for c#
 ::/+=::
 SendInput {RAW} += () =>
 SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};
+return
