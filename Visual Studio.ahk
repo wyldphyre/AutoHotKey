@@ -39,3 +39,8 @@ return
 SendInput {RAW} += () =>
 SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};
 return
+
+; Context shortcut macro
+:*:/cc::
+SendInput Context => Context
+return
