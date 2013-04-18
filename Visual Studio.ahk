@@ -21,16 +21,19 @@ SendInput return Field;
 
 ; Create a projector variant of a Helpers Add*Column using an entity in the clipboard
 ::/pac::
-SendInput public static Exp.Data.GridColumnControl<^v> Add_NAME_HERE_Column<TContext>(this Exp.Data.GridTemplateControl<TContext> Template, Forge.Term.DefinitionContract TermDefinition, Func<TContext, ^v> Projector){Enter}
+CopiedType = %clipboard%
+StringSplit, Parts, CopiedType, "."
+MethodName = Add%Parts2%%Parts3%Column
+SendInput public static Exp.Data.GridColumnControl<%CopiedType%> %MethodName%<TContext>(this Exp.Data.GridTemplateControl<TContext> Template, Forge.Term.DefinitionContract TermDefinition, Func<TContext, %CopiedType%> Projector){Enter}
 SendInput {RAW}  {
 SendInput {ENTER}
-SendInput return Template.AddCustomColumn<^v>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
+SendInput return Template.AddCustomColumn<%CopiedType%>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
 SendInput {RAW}  }
 SendInput {ENTER}
-SendInput public static Exp.Data.GridColumnControl<^v> Add_NAME_HERE_Column<TContext>(this Exp.Data.GridTemplateControl<TContext> Template, Forge.Term.DefinitionContract TermDefinition, Func<TContext, IEnumerable<^v>> Projector){ENTER}
+SendInput public static Exp.Data.GridColumnControl<%CopiedType%> %MethodName%<TContext>(this Exp.Data.GridTemplateControl<TContext> Template, Forge.Term.DefinitionContract TermDefinition, Func<TContext, IEnumerable<%CopiedType%>> Projector){ENTER}
 SendInput {RAW}  {
 SendInput {ENTER}
-SendInput return Template.AddCustomColumn<^v>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
+SendInput return Template.AddCustomColumn<%CopiedType%>(TermDefinition, Projector, Field => Field.TextBlock.AddText(Field.Value.FormatTitle()));{ENTER}
 SendInput {RAW}  }
 return
 
