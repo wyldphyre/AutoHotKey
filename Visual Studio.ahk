@@ -40,7 +40,7 @@ return
 ; Creat an empty anonymous delegate for c#
 ::/+=::
 SendInput {RAW} += () =>
-SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};
+SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};{UP}
 return
 
 ; Context shortcut macro
