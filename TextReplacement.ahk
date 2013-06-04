@@ -10,7 +10,7 @@
 
 ;Work related
 :c:PS::PowerScribe
-:c:TD::TO DO:
+:c:TD::TODO:
 :C:w/::with
 :C:W/::With
 :c:===::====================
