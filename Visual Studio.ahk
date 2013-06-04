@@ -37,10 +37,14 @@ SendInput return Template.AddCustomColumn<%CopiedType%>(TermDefinition, Projecto
 SendInput {RAW}  }
 return
 
-; Creat an empty anonymous delegate for c#
+; Create an empty anonymous delegate for c#
 ::/+=::
 SendInput {RAW} += () =>
 SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};{UP}
+return
+
+; Replace >> with =>
+::>>::=>
 return
 
 ; Context shortcut macro
