@@ -44,10 +44,28 @@ SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};{UP}
 return
 
 ; Replace >> with =>
-::>>::=>
-return
+;::>>::=>
+;return
 
 ; Context shortcut macro
 :*:/cc::
 SendInput Context => Context
+return
+
+; create a Context => Context
+:*:>>::
+SendInput {BACKSPACE}
+SendInput {Shift Down}{Control Down}{Left}{Shift Up}{Control Up}^c
+SendInput ^v => ^v
+return
+
+; Start a region
+::#r::
+SendInput {RAW}#
+SendInput region{SPACE}
+return
+
+; End a region
+:*:#er::
+SendInput {RAW}#endregion
 return
