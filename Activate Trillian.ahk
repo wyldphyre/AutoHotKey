@@ -4,3 +4,4 @@ if WinExist("Trillian")
 {
   WinActivate
 }
+return
