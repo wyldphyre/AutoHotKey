@@ -45,7 +45,7 @@ return
 ^!+s::
 if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
 {
-  SendInput ^!k ; VS shortcut that puts the current files path on the clipboard; Fil.CopyFullPath is assigned to Ctrl+ALt+k
+  SendInput ^!k ; VS shortcut that puts the current files path on the clipboard; File.CopyFullPath is assigned to Ctrl+ALt+k
   Sleep, 250
   WinActivate
   Send ^v
