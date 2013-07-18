@@ -1,3 +1,5 @@
+SetTitleMatchMode, 2 ; Match anywhere in title
+#IfWinNotActive ,SQL Server Management Studio
 ; Hotstrings for text replacement
 
 :c:atm::at the moment 
