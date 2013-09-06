@@ -46,6 +46,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
 :c*:ktm::Karisma.ForgeTemplateMap
+:c*:kg::Karisma.ForgeTermGlossary
 
 ; Development related
 :c:pc::PrimeCache
