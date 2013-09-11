@@ -49,7 +49,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c*:kg::Karisma.ForgeTermGlossary
 
 ; Development related
-:c:pc::PrimeCache
+;:c:pc::PrimeCache
 :cr*:{gs}::{ get; set; }
 :cr*:{gps}::{ get; private set; }
 :cr*:{gs}::{ get; set; }
