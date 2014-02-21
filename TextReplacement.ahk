@@ -13,11 +13,11 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 ;Work related
 :c:PS::PowerScribe
 :c:TD::TODO:
-:C:w/::with
-:C:W/::With
+;:C:w/::with
+;:C:W/::With
 :c:===::====================
 :c:mrm::Management Review Meeting
-:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
+;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
 :c:sql::SQL
 :c:dicom::DICOM
@@ -41,12 +41,13 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:csv::CSV
 :c:sdk::SDK
 :c:klge::KLGE
-:c:gfc::Get Fit Challenge
+;:c:gfc::Get Fit Challenge
 :C:sms::SMS
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
 :c*:ktm::Karisma.ForgeTemplateMap
 :c*:kg::Karisma.ForgeTermGlossary
+:c*:amz::Adv.Money.Zero
 
 ; Development related
 ;:c:pc::PrimeCache
@@ -55,9 +56,9 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :cr*:{gs}::{ get; set; }
 :cr*:ftm::ForgeTemplateMap
 
-:c:endif::
-sendRaw {$ENDIF}
-return
+;:c:endif::
+;sendRaw {$ENDIF}
+;return
 
 :*:]d::  ; This hotstring replaces "]d" with the current date and time via the commands below.
 FormatTime, CurrentDateTime,, M/d/yyyy h:mm tt  ; It will look like 9/1/2005 3:53 PM
