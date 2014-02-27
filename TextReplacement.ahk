@@ -45,6 +45,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :C:sms::SMS
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
+:c*:katm::KarismaAgent.ForgeTemplateMap
 :c*:ktm::Karisma.ForgeTemplateMap
 :c*:kg::Karisma.ForgeTermGlossary
 :c*:amz::Adv.Money.Zero
