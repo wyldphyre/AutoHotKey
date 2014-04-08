@@ -19,7 +19,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:mrm::Management Review Meeting
 ;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
-:c:sql::SQL
+;:c:sql::SQL
 :c:dicom::DICOM
 :c:hl7connect::HL7Connect
 :c:karisma::Karisma
