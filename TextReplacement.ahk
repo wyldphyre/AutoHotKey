@@ -57,6 +57,10 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :cr*:{gs}::{ get; set; }
 :cr*:ftm::ForgeTemplateMap
 
+; Shortcuts for ResophNotes
+:cr*:;sql::sql - 
+:cr*:;td::todo - 
+
 ;:c:endif::
 ;sendRaw {$ENDIF}
 ;return
