@@ -27,8 +27,8 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:api::API
 :c:bz::Bugzilla
 :c:fti::FTI
-:c:kb::knowledge base
-:c:KB::Knowledge Base
+;:c:kb::knowledge base
+;:c:KB::Knowledge Base
 :c:hq::HQ
 :c:hqd::HQD
 :c:hqt::HQT

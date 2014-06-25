@@ -35,7 +35,7 @@
 			"file": "TextReplacement.ahk",
 			"settings":
 			{
-				"buffer_size": 2256,
+				"buffer_size": 2362,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,6 +63,22 @@
 		"selected_items":
 		[
 			[
+				"au",
+				"AutoHotkey - Compile"
+			],
+			[
+				"",
+				"AutoHotkey - Compile"
+			],
+			[
+				"package ",
+				"Preferences: Browse Packages"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
 				"ssau",
 				"Set Syntax: AutoHotkey"
 			],
@@ -79,7 +95,7 @@
 				"Code Folding: Fold Tag Attributes"
 			]
 		],
-		"width": 400.0
+		"width": 576.0
 	},
 	"console":
 	{
@@ -100,18 +116,19 @@
 	},
 	"file_history":
 	[
+		"/C/Users/craigr/AppData/Roaming/Sublime Text 3/Packages/User/AutoHotkey.sublime-settings",
+		"/C/Users/craigr/AppData/Roaming/Sublime Text 3/Packages/AutoHotkey/AutoHotkey.sublime-settings",
 		"/C/Users/craigr/Dropbox/AutoHotKey/Activate Trillian.ahk",
 		"/C/Users/craigr/Dropbox/AutoHotKey/Visual Studio.ahk",
 		"/C/Users/craigr/Dropbox/AutoHotKey/TextReplacement.ahk",
 		"/C/Users/craigr/Dropbox/AutoHotKey/Safe Shortcuts.ahk",
-		"/C/Users/craigr/AppData/Roaming/Sublime Text 3/Packages/AutoHotkey/AutoHotkey.sublime-settings",
 		"/C/Development/Forge/Karisma/KarismaClient/Request/KarismaClientRequestDialog.cs",
 		"/C/Users/craigr/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/craigr/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -142,7 +159,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -228,7 +245,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -237,15 +254,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2256,
+						"buffer_size": 2362,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1506,
+								1506
 							]
 						],
 						"settings":
@@ -256,7 +273,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -284,7 +301,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -312,7 +329,7 @@
 						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -349,9 +366,17 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 100.0
 	},
 	"project": "Work.sublime-project",
 	"replace":
@@ -364,6 +389,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"textre",
+				"C:\\Users\\craigr\\Dropbox\\AutoHotKey\\TextReplacement.ahk"
+			]
 		],
 		"width": 0.0
 	},
