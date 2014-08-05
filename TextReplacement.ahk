@@ -2,7 +2,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 #IfWinNotActive ,SQL Server Management Studio
 ; Hotstrings for text replacement
 
-:c:atm::at the moment 
+:c:atm::at the moment
 :c:Tks::Thanks
 :c:tks::thanks
 :c:Hth::Hope that helps
@@ -13,22 +13,16 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 ;Work related
 :c:PS::PowerScribe
 :c:TD::TODO:
-;:C:w/::with
-;:C:W/::With
 :c:===::====================
 :c:mrm::Management Review Meeting
 ;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
-;:c:sql::SQL
-:c:dicom::DICOM
 :c:hl7connect::HL7Connect
 :c:karisma::Karisma
 :c:brs::BRS
 :c:api::API
 :c:bz::Bugzilla
 :c:fti::FTI
-;:c:kb::knowledge base
-;:c:KB::Knowledge Base
 :c:hq::HQ
 :c:hqd::HQD
 :c:hqt::HQT
@@ -41,7 +35,6 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:csv::CSV
 :c:sdk::SDK
 :c:klge::KLGE
-;:c:gfc::Get Fit Challenge
 :C:sms::SMS
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
@@ -52,14 +45,14 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 
 ; Development related
 ;:c:pc::PrimeCache
-:cr*:{gs}::{ get; set; }
-:cr*:{gps}::{ get; private set; }
-:cr*:{gs}::{ get; set; }
+;:cr*:{gs}::{ get; set; }
+;:cr*:{gps}::{ get; private set; }
+;:cr*:{gs}::{ get; set; }
 :cr*:ftm::ForgeTemplateMap
 
 ; Shortcuts for ResophNotes
-:cr*:;sql::sql - 
-:cr*:;td::todo - 
+;:cr*:;sql::sql -
+;:cr*:;td::todo -
 
 ;:c:endif::
 ;sendRaw {$ENDIF}
