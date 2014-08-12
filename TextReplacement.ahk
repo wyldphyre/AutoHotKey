@@ -10,11 +10,25 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:Ymmv::Your mileage may vary
 :c:ymmv::your mileage may vary
 
+; Verbose timestamp
+:c:/dtv::
+FormatTime, xx,, dd MMM yyyy ; This is one type of the date format
+FormatTime, zz,, hh:mm:ss tt ; This is one type of the time format
+SendInput, %xx% %zz%
+return
+
+; Compact timestamp
+:c:/dtc::
+FormatTime, xx,, yyyy-MM-dd ; This is one type of the date format
+FormatTime, zz,, hh:mm ; This is one type of the time format
+SendInput, %xx% %zz%
+return
+
+
 ;Work related
 :c:PS::PowerScribe
 :c:TD::TODO:
 :c:===::====================
-:c:mrm::Management Review Meeting
 ;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
 :c:hl7connect::HL7Connect
@@ -22,19 +36,13 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:brs::BRS
 :c:api::API
 :c:bz::Bugzilla
-:c:fti::FTI
 :c:hq::HQ
 :c:hqd::HQD
-:c:hqt::HQT
-:c:kms::KMS
 :c:ceo::CEO
-:c:ktc::KarismaTimeControllers
-:c:tc::TimeController
 :c:url::URL
 :c:urls::URLs
 :c:csv::CSV
 :c:sdk::SDK
-:c:klge::KLGE
 :C:sms::SMS
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
