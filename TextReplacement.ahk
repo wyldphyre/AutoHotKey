@@ -9,6 +9,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 :c:hth::hope that helps
 :c:Ymmv::Your mileage may vary
 :c:ymmv::your mileage may vary
+:c:fyi::FYI
 
 ; Verbose timestamp
 :c:/dtv::
@@ -23,6 +24,25 @@ FormatTime, xx,, yyyy-MM-dd ; This is one type of the date format
 FormatTime, zz,, hh:mm ; This is one type of the time format
 SendInput, %xx% %zz%
 return
+
+; Verbose date
+:c:/dv::
+FormatTime, xx,, dd MMM yyyy ; This is one type of the date format
+SendInput, %xx%
+return
+
+; Compact date
+:c:/dtc::
+FormatTime, xx,, yyyy-MM-dd ; This is one type of the date format
+SendInput, %xx%
+return
+
+; time
+:c:/t::
+FormatTime, zz,, hh:mm tt ; This is one type of the time format
+SendInput, %zz%
+return
+
 
 
 ;Work related
