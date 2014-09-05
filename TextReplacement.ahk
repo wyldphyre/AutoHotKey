@@ -56,7 +56,7 @@ return
 :c:brs::BRS
 :c:api::API
 :c:bz::Bugzilla
-:c:hq::HQ
+;:c:hq::HQ
 :c:hqd::HQD
 :c:ceo::CEO
 :c:url::URL
