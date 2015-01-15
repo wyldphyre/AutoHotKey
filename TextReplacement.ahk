@@ -63,6 +63,8 @@ return
 :c:csv::CSV
 :c:sdk::SDK
 :C:sms::SMS
+:c:k3::K3
+:c:k4::K4
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
 :c*:katm::KarismaAgent.ForgeTemplateMap
