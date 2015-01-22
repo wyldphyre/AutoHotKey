@@ -65,6 +65,7 @@ return
 :C:sms::SMS
 :c:k3::K3
 :c:k4::K4
+:c*:k/::Karisma.
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
 :c*:katm::KarismaAgent.ForgeTemplateMap
