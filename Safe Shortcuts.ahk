@@ -59,15 +59,18 @@ return
 #IfWinActive Sublime Text
 ; Ctrl+Shift+S: open the current file in Safe
 ^+s::
+Send, {AppsKey}
+Sleep, 50
+SendInput, {UP}{UP}{ENTER}
 if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
 {
-  Send, {AppsKey}
-  Sleep, 50
-  SendInput, {UP}{UP}{ENTER}
   WinActivate
-  Send ^v
 }
 else
+{
   Run "C:\Kestral\Safe\Console\1.1\SafeConsole.exe"
+  Sleep, 1500
+}
+Send ^v
 return
 
