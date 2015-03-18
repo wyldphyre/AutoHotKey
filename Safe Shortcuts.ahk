@@ -53,3 +53,20 @@ if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
 else
   Run "C:\Program Files (x86)\Obelisk\safe\Console\1.1\SafeConsole.exe"
 return
+
+; Handle shortcut in Sublime Text
+#IfWinActive Sublime Text
+; Ctrl+Shift+S: open the current file in Safe
+^+s::
+if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
+{
+  Send, {AppsKey}
+  Sleep, 50
+  SendInput, {UP}{UP}{ENTER}
+  WinActivate
+  Send ^v
+}
+else
+  Run "C:\Program Files (x86)\Obelisk\safe\Console\1.1\SafeConsole.exe"
+return
+
