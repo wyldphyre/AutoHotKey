@@ -5,6 +5,7 @@ SetTitleMatchMode 2 ; title can contain the search text
 ;  - Windows Explorer
 ;  - Notepad++
 ;  - Visual Studio // relies on VS having a shortcut that will put the current files path on the clipboard
+;  - Sublime Text
 
 ; Handle shortcut in Windows Explorer
 #IfWinActive ahk_class CabinetWClass
@@ -21,7 +22,7 @@ if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
   Send ^v
 }
 else
-  Run "C:\Program Files (x86)\Obelisk\safe\Console\1.1\SafeConsole.exe"
+  Run "C:\Kestral\Safe\Console\1.1\SafeConsole.exe"
 return
 
 ; Handle shortcut in Notepad++
@@ -36,7 +37,7 @@ if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
   Send ^v
 }
 else
-  Run "C:\Program Files (x86)\Obelisk\safe\Console\1.1\SafeConsole.exe"
+  Run "C:\Kestral\Safe\Console\1.1\SafeConsole.exe"
 return
 
 ; Handle shortcut in Visual Studio
@@ -51,7 +52,7 @@ if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
   Send ^v
 }
 else
-  Run "C:\Program Files (x86)\Obelisk\safe\Console\1.1\SafeConsole.exe"
+  Run "C:\Kestral\Safe\Console\1.1\SafeConsole.exe"
 return
 
 ; Handle shortcut in Sublime Text
@@ -67,6 +68,6 @@ if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
   Send ^v
 }
 else
-  Run "C:\Program Files (x86)\Obelisk\safe\Console\1.1\SafeConsole.exe"
+  Run "C:\Kestral\Safe\Console\1.1\SafeConsole.exe"
 return
 
