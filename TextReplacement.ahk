@@ -72,6 +72,7 @@ return
 :c*:ktm::Karisma.ForgeTemplateMap
 :c*:kg::Karisma.ForgeTermGlossary
 :c*:amz::Adv.Money.Zero
+:c*:@hqk::hqkarisma@kestral.com.au
 
 ; Development related
 ;:c:pc::PrimeCache
