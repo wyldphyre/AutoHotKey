@@ -44,7 +44,6 @@ SendInput, %zz%
 return
 
 
-
 ;Work related
 :c:TD::TODO:
 :c:===::====================
