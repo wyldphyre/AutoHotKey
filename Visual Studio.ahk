@@ -39,8 +39,8 @@ return
 
 ; Create an empty anonymous delegate for c#
 ::/+=::
-SendInput {RAW} += () =>
-SendInput {ENTER}{BACKSPACE}{{}{ENTER}{}};{UP}
+SendInput {RAW} += () => {};
+SendInput {LEFT}{LEFT}{LEFT}{LEFT}{ENTER}{RIGHT}{ENTER}{UP}{RIGHT}{ENTER}
 return
 
 ; Replace >> with =>
