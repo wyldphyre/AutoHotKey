@@ -13,6 +13,10 @@ SetTitleMatchMode 2 ; title can contain the search text
 
 #IfWinActive Microsoft Visual Studio
 
+^!+F9::
+SendInput {F10}
+return
+
 ; Temporary shortcut for code refactoring
 ::/dc::
 SendInput var Field = PropertySheet.AddComboBoxField(TermDefinition, ^v);{ENTER}
