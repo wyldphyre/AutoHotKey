@@ -43,6 +43,31 @@ FormatTime, zz,, hh:mm tt ; This is one type of the time format
 SendInput, %zz%
 return
 
+; Star Ratings
+:c:5stars::
+Send {U+2605}{U+2605}{U+2605}{U+2605}{U+2605}
+return
+:c:4stars::
+Send {U+2605}{U+2605}{U+2605}{U+2605}{U+2606}
+return
+:c:3stars::
+Send {U+2605}{U+2605}{U+2605}{U+2606}{U+2606}
+return
+:c:2stars::
+Send {U+2605}{U+2605}{U+2606}{U+2606}{U+2606}
+return
+:c:1stars::
+Send {U+2605}{U+2606}{U+2606}{U+2606}{U+2606}
+return
+:c:0stars::
+Send {U+2606}{U+2606}{U+2606}{U+2606}{U+2606}
+return
+
+; Unicode Shortcuts
+:c:/heart::{U+2665}
+:c:/star::{U+2605}
+:c:/skull::{U+2620}
+;:c:diaf::{U+2620} in a 
 
 ;Work related
 :c:TD::TODO:
