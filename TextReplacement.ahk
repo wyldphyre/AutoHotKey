@@ -32,7 +32,7 @@ SendInput, %xx%
 return
 
 ; Compact date
-:c:/dtc::
+:c:/dc::
 FormatTime, xx,, yyyy-MM-dd ; This is one type of the date format
 SendInput, %xx%
 return
@@ -67,7 +67,6 @@ return
 :c:/heart::{U+2665}
 :c:/star::{U+2605}
 :c:/skull::{U+2620}
-;:c:diaf::{U+2620} in a 
 
 ;Work related
 :c:TD::TODO:
