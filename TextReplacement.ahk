@@ -74,7 +74,7 @@ return
 ;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
 :c:hl7connect::HL7Connect
-:c*:karisma ::Karisma
+:c*:karisma ::Karisma{Space}
 :c:brs::BRS
 :c:api::API
 :c:bz::Bugzilla
