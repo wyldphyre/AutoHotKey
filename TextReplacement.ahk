@@ -75,6 +75,7 @@ return
 :c:pacs::PACS
 :c:hl7connect::HL7Connect
 :c*:karisma ::Karisma{Space}
+:c*:hl7 ::HL7{Space}
 :c:brs::BRS
 :c:api::API
 :c:bz::Bugzilla
