@@ -13,9 +13,10 @@ SetTitleMatchMode 2 ; title can contain the search text
 
 #IfWinActive Microsoft Visual Studio
 
-^!+F9::
-SendInput {F10}
-return
+;Ctrl+Alt+Shift+F9 sends F10 // no idea why I created this
+;^!+F9::
+;SendInput {F10}
+;return
 
 ; Create an empty anonymous delegate for c#
 ::/+=::
