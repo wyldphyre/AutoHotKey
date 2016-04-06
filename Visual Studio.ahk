@@ -24,21 +24,21 @@ SendInput {RAW} += () => {};
 SendInput {LEFT}{LEFT}{LEFT}{LEFT}{ENTER}{RIGHT}{ENTER}{UP}{RIGHT}{ENTER}
 return
 
-; Replace >> with =>
-;::>>::=>
-;return
+; Immediately replace >> with =>
+:*:>>::=>
+return
 
 ; Context shortcut macro
 :*:/cc::
 SendInput Context => Context
 return
 
-; create a Context => Context
-:*:>>::
-SendInput {BACKSPACE}
-SendInput {Shift Down}{Control Down}{Left}{Shift Up}{Control Up}^c
-SendInput ^v => ^v
-return
+; create a Context => Context for use in a linq expression
+;  :*:>>::
+;  SendInput {BACKSPACE}
+;  SendInput {Shift Down}{Control Down}{Left}{Shift Up}{Control Up}^c
+;  SendInput ^v => ^v
+;  return
 
 ; Start a region
 ::#r::
