@@ -122,6 +122,8 @@ return
 ;==============================================
 ;::ap::ApplicationPlan
 
+; Morning prep work log entry shortcut
+:cr*:/mprep::Morning prep and email.
 
 ;Create an empty Delphi 5 IFDEF declaration
 :o:ifdefd5::{{}$IFDEF VER130{}}{RETURN}{{}$ELSE{}}{ENTER}{{}$ENDIF{}}{UP}{HOME}{ENTER}{UP}
