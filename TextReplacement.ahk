@@ -136,3 +136,6 @@ SendInput ^b^uPatch {RAW}#
 SendInput :^u^b{ENTER}
 SendInput {UP}{END}{LEFT}
 return
+
+; Internal use notification for use in HQ patches
+::/internaluse::Note: This change is for internal use and will not be included on the External build notes.
