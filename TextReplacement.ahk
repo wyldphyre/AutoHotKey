@@ -137,5 +137,13 @@ SendInput :^u^b{ENTER}
 SendInput {UP}{END}{LEFT}
 return
 
+; Create Kestral Patch Testing Block. For use when making changes in 3rd party code
+::/tpatch::
+SendInput ^b^uTesting Patch {RAW}#
+SendInput :^u^b{ENTER}
+SendInput {UP}{END}{LEFT}
+return
+
+
 ; Internal use notification for use in HQ patches
 ::/internaluse::Note: This change is for internal use and will not be included on the External build notes.
