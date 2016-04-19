@@ -146,4 +146,4 @@ return
 
 
 ; Internal use notification for use in HQ patches
-::/internaluse::Note: This change is for internal use and will not be included on the External build notes.
+::/internal::Note: This change is for internal use and will not be included on the External build notes.
