@@ -61,7 +61,7 @@ return
 ^+s::
 Send, {AppsKey}
 Sleep, 50
-SendInput, {UP}{UP}{ENTER}
+SendInput, {UP}{UP}{UP}{ENTER}
 if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
 {
   WinActivate
