@@ -97,6 +97,7 @@ return
 :c*:kg::Karisma.ForgeTermGlossary
 :c*:amz::Adv.Money.Zero
 :c*:@hqk::hqkarisma@kestral.com.au
+:cR:smsp::SMS+
 
 ; Development related
 ;:c:pc::PrimeCache
