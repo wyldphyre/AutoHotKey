@@ -1,4 +1,5 @@
 #IfWinActive ahk_class LyncConversationWindowClass
+
 ; turn Enter into Shift+Enter
 Enter::
 SendInput, +{ENTER}
