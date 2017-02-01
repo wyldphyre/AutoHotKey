@@ -1,6 +1,7 @@
-﻿SetTitleMatchMode, 2 ; Match anywhere in title
+SetTitleMatchMode, 2 ; Match anywhere in title
 #IfWinNotActive ,SQL Server Management Studio
-; Hotstrings for text replacement
+
+; This file contains assorted hotstrings for text replacement
 
 :c:atm::at the moment
 :c:Tks::Thanks
@@ -80,9 +81,8 @@ return
 :c*:hl7 ::HL7{Space}
 :c:brs::BRS
 :c:api::API
-:c:bz::Bugzilla
 ;:c:hq::HQ
-:c:hqd::HQD
+;:c:hqd::HQD
 :c:ceo::CEO
 :c:url::URL
 :c:urls::URLs
@@ -97,15 +97,11 @@ return
 :c*:katm::KarismaAgent.ForgeTemplateMap
 :c*:ktm::Karisma.ForgeTemplateMap
 :c*:kg::Karisma.ForgeTermGlossary
-:c*:amz::Adv.Money.Zero
+;:c*:amz::Adv.Money.Zero
 :c*:@hqk::hqkarisma@kestral.com.au
 :cR:smsp::SMS+
 
 ; Development related
-;:c:pc::PrimeCache
-;:cr*:{gs}::{ get; set; }
-:cr*:gps}::get; private set;
-:cr*:gs}::get; set;
 :cr*:ftm::ForgeTemplateMap
 
 ; Shortcuts for ResophNotes
