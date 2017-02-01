@@ -67,6 +67,8 @@ return
 :c:/heart::{U+2665}
 :c:/star::{U+2605}
 :c:/skull::{U+2620}
+:c:/tick::✓
+:c:/cross::✘
 
 ;Work related
 :c:TD::TODO:
