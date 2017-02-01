@@ -147,6 +147,9 @@ SendInput :^u^b{ENTER}
 SendInput {UP}{END}{LEFT}
 return
 
+::/eshrug::
+SendInput ¯\_(ツ)_/¯
+return
 
 ; Internal use notification for use in HQ patches
 ::/internal::Note: This change is for internal use and will not be included on the External build notes.
