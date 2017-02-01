@@ -3,6 +3,7 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 
 ; This file contains assorted hotstrings for text replacement
 
+; Short helper abbreviation expansions 
 :c:atm::at the moment
 :c:Tks::Thanks
 :c:tks::thanks

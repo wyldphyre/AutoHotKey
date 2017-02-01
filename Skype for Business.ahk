@@ -1,5 +1,7 @@
 #IfWinActive ahk_class LyncConversationWindowClass
 
+; Shortcuts to provide more sensible behaviour in Skype for Business
+
 ; turn Enter into Shift+Enter
 Enter::
 SendInput, +{ENTER}
