@@ -1,4 +1,4 @@
-SetTitleMatchMode, 2 ; Match anywhere in title
+﻿SetTitleMatchMode, 2 ; Match anywhere in title
 #IfWinNotActive ,SQL Server Management Studio
 ; Hotstrings for text replacement
 
