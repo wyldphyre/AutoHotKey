@@ -1,4 +1,5 @@
 #IfWinActive ahk_class TEditWindow
+
 ; provide an equivalent to Ctrl-a (select all) within the Delphi IDE
 ~^a::
 SendInput, ^{HOME}^+{END}
@@ -87,27 +88,3 @@ return
 ;Create assertion stubs for getters and setters
 :o:asserti::Assert(Invariants('', , , ''));{left 12}
 :o:assertc::Assert(Condition(, '', ''));{left 11}
-
-; Automatic case correction of Delphi Keywords
-;==============================================
-;:C:procedure::Procedure
-;:C:function::Function
-:C:constructor::Constructor
-:C:destructor::Destructor
-:C:property::Property
-:C:override::Override
-:C:overload::Overload
-;:c:aplan::ApplicationPlan
-;:C:begin::Begin
-;:C:end::End
-;:C:if::If
-;:C:then::Then
-;:C:else::Else
-;:C:and::And
-;:C:interface::Interface
-;:C:var::Var
-;:C:in::In
-;:C:or::Or
-;:C:for::For
-;:C:to::To
-;:C:do::Do
