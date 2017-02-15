@@ -20,8 +20,8 @@ SendInput {LEFT}{LEFT}{LEFT}{LEFT}{ENTER}{RIGHT}{ENTER}{UP}{RIGHT}{ENTER}
 return
 
 ; Immediately replace >> with =>
-:*:>>::=>
-return
+;:*:>>::=>
+;return
 
 ; Context shortcut macro
 :*:/cc::
