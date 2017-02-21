@@ -1,4 +1,4 @@
-SetTitleMatchMode, 2 ; Match anywhere in title
+﻿SetTitleMatchMode, 2 ; Match anywhere in title
 #IfWinNotActive ,SQL Server Management Studio
 
 ; This file contains assorted hotstrings for text replacement
@@ -101,6 +101,7 @@ return
 ;:c*:amz::Adv.Money.Zero
 :c*:@hqk::hqkarisma@kestral.com.au
 :cR:smsp::SMS+
+:c*:cmn::category:="Metro North"
 
 ; Development related
 :cr*:ftm::ForgeTemplateMap
