@@ -3,7 +3,7 @@
 
 ; This file contains assorted hotstrings for text replacement
 
-; Short helper abbreviation expansions 
+; Short helper abbreviation expansions
 :c:atm::at the moment
 :c:Tks::Thanks
 :c:tks::thanks
@@ -102,6 +102,7 @@ return
 :c*:@hqk::hqkarisma@kestral.com.au
 :cR:smsp::SMS+
 :c*:cmn::category:="Metro North"
+:c*:mnhhs::MNHHS
 
 ; Development related
 :cr*:ftm::ForgeTemplateMap
