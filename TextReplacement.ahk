@@ -103,6 +103,7 @@ return
 :cR:smsp::SMS+
 :c*:cmn::category:="Metro North"
 :c*:mnhhs::MNHHS
+:c*:hbcis::HBCIS
 
 ; Development related
 :cr*:ftm::ForgeTemplateMap
