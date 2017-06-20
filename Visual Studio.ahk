@@ -11,10 +11,10 @@ SetTitleMatchMode 2 ; title can contain the search text
 ;    Suspend On
 ;return
 
+#IfWinActive Microsoft Visual Studio
+
 ; Remap scroll lock to Ctrl+Break
 sc046::Send ^{CtrlBreak}
-
-#IfWinActive Microsoft Visual Studio
 
 ; Create an empty anonymous delegate for c#
 ::/+=::
@@ -27,9 +27,9 @@ return
 ;return
 
 ; Context shortcut macro
-:*:/cc::
-SendInput Context => Context
-return
+;:*:/cc::
+;SendInput Context => Context
+;return
 
 ; create a Context => Context for use in a linq expression
 ;  :*:>>::
