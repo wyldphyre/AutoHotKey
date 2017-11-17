@@ -104,6 +104,8 @@ return
 :c*:cmn::category:="Metro North"
 :c*:mnhhs::MNHHS
 :c*:hbcis::HBCIS
+:c:mhr::MHR
+:c:mhrx::My Health Record
 
 ; Development related
 :cr*:ftm::ForgeTemplateMap
