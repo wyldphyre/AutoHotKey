@@ -1,4 +1,4 @@
-#IfWinActive ahk_class LyncConversationWindowClass
+#IfWinActive ahk_class LyncTabFrameHostWindowClass
 
 ; Shortcuts to provide more sensible behaviour in Skype for Business
 
