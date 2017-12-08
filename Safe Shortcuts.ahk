@@ -31,7 +31,6 @@ return
 ^!+s::
 if WinExist("KESTRAL\craigr@vcs.kestral.com.au - Obelisk Safe Console 1.1")
 {
-  ; Get current path in Explorer (works even when Address bar is hidden)
   Send !e{Down}{Down}{Down}{Down}{Down}{Down}{Down}{Right}{Enter}
   WinActivate
   Send ^v
