@@ -78,12 +78,12 @@ return
 ;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
 :c:hl7connect::HL7Connect
-:c*:karisma ::Karisma{Space}
+;:c*:karisma ::Karisma{Space}
 :c*:hl7 ::HL7{Space}
 :c:brs::BRS
 :c:api::API
-;:c:hq::HQ
-;:c:hqd::HQD
+:c:hq::HQ
+:c:hqd::HQD
 :c:ceo::CEO
 :c:url::URL
 :c:urls::URLs
@@ -92,7 +92,7 @@ return
 :C:sms::SMS
 :c:k3::K3
 :c:k4::K4
-:c*:k/::Karisma.
+;:c*:k/::Karisma.
 :c*:kdm::Karisma.ForgeDataModel
 :c*:kctm::KarismaClient.ForgeTemplateMap
 :c*:katm::KarismaAgent.ForgeTemplateMap
@@ -105,6 +105,7 @@ return
 :c*:mnhhs::MNHHS
 :c*:hbcis::HBCIS
 :c:mhr::MHR
+:c:mhrb::MHR Broker
 :c:mhrx::My Health Record
 
 ; Development related
