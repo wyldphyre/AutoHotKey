@@ -1,5 +1,5 @@
-if (WinActive("ahk_class LyncTabFrameHostWindowClass") or WinActive("ahk_class LyncConversationWindowClass"))
-{
+#IfWinActive ahk_class LyncTabFrameHostWindowClass
+
 ; Shortcuts to provide more sensible behaviour in Skype for Business
 
 ; turn Enter into Shift+Enter
@@ -11,4 +11,3 @@ return
 ^Enter::
 SendInput, {ENTER}
 return
-}
