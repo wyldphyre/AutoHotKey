@@ -160,3 +160,6 @@ return
 
 ; Internal use notification for use in HQ patches
 ::/internal::Note: This change is for internal use and will not be included on the External build notes.
+
+; Plex Watch Later Email Address
+::/pwl::queue+C2Tc3jbmaXhVbpOLznqf@save.plex.tv
