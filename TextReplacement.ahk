@@ -71,6 +71,10 @@ return
 :c:/skull::{U+2620}
 :c:/tick::✓
 :c:/cross::✘
+:c:/triangleup::▲
+:c:/triangledown::▼
+:c:/triangleleft::◀
+:c:/triangleright::▶
 
 ;Work related
 :c:TD::TODO:
