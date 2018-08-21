@@ -3,5 +3,5 @@ SetTitleMatchMode, 2 ; Match anywhere in title
 
 ; Hotstrings for text replacement in SQL Server Management Studio
 
-:c*:/c::[Current]
-:c*:/v::[Version]
+:c*:/c::[Current].[Karisma.
+:c*:/v::[Version].[Karisma.
