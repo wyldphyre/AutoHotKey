@@ -111,6 +111,7 @@ return
 :c:mhr::MHR
 :c:mhrb::MHR Broker
 :c:mhrx::My Health Record
+:c:gchhs::GCHHS
 
 ; Development related
 :cr*:ftm::ForgeTemplateMap
