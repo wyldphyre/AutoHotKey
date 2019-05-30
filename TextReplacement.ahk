@@ -123,8 +123,8 @@ return
 ;sendRaw {$ENDIF}
 ;return
 
-:*:]d::  ; This hotstring replaces "]d" with the current date and time via the commands below.
-FormatTime, CurrentDateTime,, M/d/yyyy h:mm tt  ; It will look like 9/1/2005 3:53 PM
+:*:]d::  ; This hotstring replaces "]d" with the current date via the commands below.
+FormatTime, CurrentDateTime,, yyyy-M-d  ; It will look like 2005-9-1
 SendInput %CurrentDateTime%
 return
 
