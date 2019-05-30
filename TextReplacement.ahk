@@ -105,7 +105,6 @@ return
 ;:c*:amz::Adv.Money.Zero
 :c*:@hqk::hqkarisma@kestral.com.au
 :cR:smsp::SMS+
-:c*:cmn::category:="Metro North"
 :c*:mnhhs::MNHHS
 :c*:hbcis::HBCIS
 :c:mhr::MHR
