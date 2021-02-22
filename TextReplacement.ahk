@@ -12,6 +12,7 @@
 :c:Ymmv::Your mileage may vary
 :c:ymmv::your mileage may vary
 :c:fyi::FYI
+:c:/ccare::Communicare
 
 ; Verbose timestamp
 :c:/dtv::
@@ -30,6 +31,12 @@ return
 ; Verbose date
 :c:/dv::
 FormatTime, xx,, dd MMM yyyy ; This is one type of the date format
+SendInput, %xx%
+return
+
+; Day and date
+:c:/dd::
+FormatTime, xx,, dddd yyyy-MM-dd
 SendInput, %xx%
 return
 
@@ -78,39 +85,25 @@ return
 
 ;Work related
 :c:TD::TODO:
-:c:===::====================
 ;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
 :c:pacs::PACS
-:c:hl7connect::HL7Connect
 ;:c*:karisma ::Karisma{Space}
 :c*:hl7 ::HL7{Space}
-:c:brs::BRS
-:c:api::API
-:c:hq::HQ
-:c:hqd::HQD
-:c:ceo::CEO
-:c:url::URL
-:c:urls::URLs
-:c:csv::CSV
-:c:sdk::SDK
-:C:sms::SMS
-:c:k3::K3
-:c:k4::K4
+;:c:api::API
+;:c:ceo::CEO
+;:c:url::URL
+;:c:urls::URLs
+;:c:csv::CSV
+;:c:sdk::SDK
+;:C:sms::SMS
 ;:c*:k/::Karisma.
-:c*:kdm::Karisma.ForgeDataModel
-:c*:kctm::KarismaClient.ForgeTemplateMap
-:c*:katm::KarismaAgent.ForgeTemplateMap
-:c*:ktm::Karisma.ForgeTemplateMap
-:c*:kg::Karisma.ForgeTermGlossary
 ;:c*:amz::Adv.Money.Zero
-:c*:@hqk::hqkarisma@kestral.com.au
-:cR:smsp::SMS+
-:c*:mnhhs::MNHHS
 :c*:hbcis::HBCIS
 :c:mhr::MHR
-:c:mhrb::MHR Broker
 :c:mhrx::My Health Record
-:c:gchhs::GCHHS
+:c:@@::craig.reynolds@health.telstra.com
+:c:/cic::Can I call?
+:c:/eyes::👀
 
 ; Development related
 :cr*:ftm::ForgeTemplateMap
@@ -136,30 +129,24 @@ return
 :cr*:/mprep::Morning prep and email.
 
 ;Create an empty Delphi 5 IFDEF declaration
-:o:ifdefd5::{{}$IFDEF VER130{}}{RETURN}{{}$ELSE{}}{ENTER}{{}$ENDIF{}}{UP}{HOME}{ENTER}{UP}
+;:o:ifdefd5::{{}$IFDEF VER130{}}{RETURN}{{}$ELSE{}}{ENTER}{{}$ENDIF{}}{UP}{HOME}{ENTER}{UP}
 
-:o:$endif::{{}$IFDEF{}}
+;:o:$endif::{{}$IFDEF{}}
 
 ; Create Kestral Patch Block. For use when making changes in 3rd party code
-::/patch::
-SendInput ^b^uPatch {RAW}#
-SendInput :^u^b{ENTER}
-SendInput {UP}{END}{LEFT}
-return
+;::/patch::
+;SendInput ^b^uPatch {RAW}#
+;SendInput :^u^b{ENTER}
+;SendInput {UP}{END}{LEFT}
+;return
 
 ; Create Kestral Patch Testing Block. For use when making changes in 3rd party code
-::/tpatch::
-SendInput ^b^uTesting Patch {RAW}#
-SendInput :^u^b{ENTER}
-SendInput {UP}{END}{LEFT}
-return
+;::/tpatch::
+;SendInput ^b^uTesting Patch {RAW}#
+;SendInput :^u^b{ENTER}
+;SendInput {UP}{END}{LEFT}
+;return
 
 ::/eshrug::
 SendInput ¯\_(ツ)_/¯
 return
-
-; Internal use notification for use in HQ patches
-::/internal::Note: This change is for internal use and will not be included on the External build notes.
-
-; Plex Watch Later Email Address
-::/pwl::queue+C2Tc3jbmaXhVbpOLznqf@save.plex.tv
