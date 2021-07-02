@@ -72,6 +72,11 @@ return
 Send {U+2606}{U+2606}{U+2606}{U+2606}{U+2606}
 return
 
+; Icons for Note Taking
+:c*:/task::✔
+:c*:/meeting::📞
+:c*:/note::✍
+
 ; Unicode Shortcuts
 :c:/heart::{U+2665}
 :c:/star::{U+2605}
@@ -104,48 +109,21 @@ return
 :c:@@::craig.reynolds@health.telstra.com
 :c:/cic::Can I call?
 :c:/eyes::👀
-
-; Development related
-:cr*:ftm::ForgeTemplateMap
+:c:/ell::…
 
 ; Shortcuts for ResophNotes
 ;:cr*:;sql::sql -
 ;:cr*:;td::todo -
-
-;:c:endif::
-;sendRaw {$ENDIF}
-;return
 
 :*:]d::  ; This hotstring replaces "]d" with the current date via the commands below.
 FormatTime, CurrentDateTime,, yyyy-M-d  ; It will look like 2005-9-1
 SendInput %CurrentDateTime%
 return
 
-; Replace 'AP.' with 'ApplicationPlan.'
-;==============================================
-;::ap::ApplicationPlan
-
-; Morning prep work log entry shortcut
-:cr*:/mprep::Morning prep and email.
-
 ;Create an empty Delphi 5 IFDEF declaration
 ;:o:ifdefd5::{{}$IFDEF VER130{}}{RETURN}{{}$ELSE{}}{ENTER}{{}$ENDIF{}}{UP}{HOME}{ENTER}{UP}
 
 ;:o:$endif::{{}$IFDEF{}}
-
-; Create Kestral Patch Block. For use when making changes in 3rd party code
-;::/patch::
-;SendInput ^b^uPatch {RAW}#
-;SendInput :^u^b{ENTER}
-;SendInput {UP}{END}{LEFT}
-;return
-
-; Create Kestral Patch Testing Block. For use when making changes in 3rd party code
-;::/tpatch::
-;SendInput ^b^uTesting Patch {RAW}#
-;SendInput :^u^b{ENTER}
-;SendInput {UP}{END}{LEFT}
-;return
 
 ::/eshrug::
 SendInput ¯\_(ツ)_/¯
