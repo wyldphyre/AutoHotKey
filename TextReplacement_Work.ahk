@@ -88,14 +88,32 @@ return
 :c:/triangleleft::◀
 :c:/triangleright::▶
 
-;Communications
-:c:@@::craig@wyldphyre.com
-:c:/cic::Can I call?
-
 ;Work related
 :c:TD::TODO:
+;:c:patchtemplate::Release Version: 3.1.1{ENTER}Urgency: Next Build{ENTER}Reviewed For Patching By: {ENTER}{ENTER}Description of the change:{ENTER}--------------------------{ENTER}{ENTER}Files:{ENTER}------{ENTER}{ENTER}Target Testing:{ENTER}---------------
+:c:pacs::PACS
+;:c*:karisma ::Karisma{Space}
+:c*:hl7 ::HL7{Space}
+;:c:api::API
+;:c:ceo::CEO
+;:c:url::URL
+;:c:urls::URLs
+;:c:csv::CSV
+;:c:sdk::SDK
+;:C:sms::SMS
+;:c*:k/::Karisma.
+;:c*:amz::Adv.Money.Zero
+:c*:hbcis::HBCIS
+:c:mhr::MHR
+:c:mhrx::My Health Record
+:c:@@::craig.reynolds@health.telstra.com
+:c:/cic::Can I call?
 :c:/eyes::👀
 :c:/ell::…
+
+; Shortcuts for ResophNotes
+;:cr*:;sql::sql -
+;:cr*:;td::todo -
 
 :*:]d::  ; This hotstring replaces "]d" with the current date via the commands below.
 FormatTime, CurrentDateTime,, yyyy-M-d  ; It will look like 2005-9-1
@@ -107,7 +125,6 @@ return
 
 ;:o:$endif::{{}$IFDEF{}}
 
-;Emoticons
 ::/eshrug::
 SendInput ¯\_(ツ)_/¯
 return
