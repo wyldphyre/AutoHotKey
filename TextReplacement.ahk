@@ -98,7 +98,7 @@ return
 :c:/ell::…
 
 :*:]d::  ; This hotstring replaces "]d" with the current date via the commands below.
-FormatTime, CurrentDateTime,, yyyy-M-d  ; It will look like 2005-9-1
+FormatTime, CurrentDateTime,, yyyy-MM-dd  ; It will look like 2005-09-01
 SendInput %CurrentDateTime%
 return
 
