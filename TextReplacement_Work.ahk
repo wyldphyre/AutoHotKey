@@ -74,8 +74,10 @@ return
 
 ; Icons for Note Taking
 :c*:/task::✔
-:c*:/meeting::📞
+:c*:/meet::📞
 :c*:/note::✍
+:c*:/doc::📄
+:c*:/bug::🐛
 
 ; Unicode Shortcuts
 :c:/heart::{U+2665}
