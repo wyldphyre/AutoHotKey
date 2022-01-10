@@ -73,11 +73,12 @@ Send {U+2606}{U+2606}{U+2606}{U+2606}{U+2606}
 return
 
 ; Icons for Note Taking
-:*:/task::✔
+:*:/check::✔
 :*:/meet::📞
 :*:/note::✍
 :*:/doc::📄
 :*:/bug::🐛
+:*:/clip::📋
 
 ; Unicode Shortcuts
 :c:/heart::{U+2665}
@@ -89,6 +90,10 @@ return
 :c:/triangledown::▼
 :c:/triangleleft::◀
 :c:/triangleright::▶
+:c*:/uparrow::↑
+:c*:/downarrow::↓
+:c*:/rightarrow::→
+:c*:/leftarrow::←
 
 ;Work related
 :c:TD::TODO:
